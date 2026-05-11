@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // Language persistence: If preference is TR, redirect to tedaviler.html
+        if (localStorage.getItem('preferredLang') === 'tr') {
+            window.location.replace('tedaviler.html' + window.location.hash);
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our wide range of dental treatments including check-ups, cleaning, cosmetic dentistry, and more at G Plus Diş Hekimi.">
+    <title>Treatments - G Plus Diş Hekimi</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- AOS CSS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <!-- SEO & Localization Tags -->
+    <link rel="canonical" href="https://www.gplusdishekimi.com/treatments.html">
+    <link rel="alternate" hreflang="en" href="https://www.gplusdishekimi.com/treatments.html">
+    <link rel="alternate" hreflang="tr" href="https://www.gplusdishekimi.com/tedaviler.html">
+
+    <meta property="og:title" content="Our Treatments - G Plus Dental">
+    <meta property="og:url" content="https://www.gplusdishekimi.com/treatments.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.gplusdishekimi.com/images/sayfa.png">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index-en.html" class="inline-style-1">
+                    <img src="images/logo.png" alt="Logotype" class="inline-style-2">
+                    <h1>G Plus Diş Hekimi</h1>
+                </a>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="index-en.html">Main Page</a>
+                <a href="about.html">About Us</a>
+                <a href="treatments.html" class="active">Treatments</a>
+                <a href="contact.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+                <a href="https://app.dentalasistan.com/online-randevu/bukem-gezginer-muayenehanesi" class="inline-style-10 btn btn-primary" target="_blank" rel="noopener noreferrer">Appointment</a>
+                <div class="lang-dropdown">
+                    <button class="lang-btn"><span class="fi fi-gb"></span> English <i class="inline-style-3 fa-solid fa-chevron-down"></i></button>
+                    <div class="lang-menu">
+                        <a href="javascript:void(0);" onclick="localStorage.setItem('preferredLang', 'tr'); window.location.replace('tedaviler.html');"><span class="fi fi-tr"></span> Türkçe</a>
+                        <a href="javascript:void(0);" onclick="localStorage.setItem('preferredLang', 'en'); window.location.reload();"><span class="fi fi-gb"></span> English</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Treatments Section -->
+    <section class="treatments-page">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="tagline">SERVICES</span>
+                <h2>Treatments</h2>
+                <p>We offer personalized, painless, and reliable treatment options using the latest technologies for your oral and dental health.</p>
+            </div>
+            
+            <div class="treatments-grid">
+                <!-- Treatment 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="fa-solid fa-x-ray"></i></div>
+                    <h3>Examination and X-Ray</h3>
+                    <p>When you arrive at our practice, we don't just focus on your complaint; we perform a comprehensive examination supported by radiological imaging. Thanks to these detailed inspections, we detect unnoticed problems early and create the most suitable and reliable treatment plan for you.</p>
+                </div>
+                
+                <!-- Treatment 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Periodontology (Gum Disease)</h3>
+                    <p>It aims to diagnose and treat diseases developing in the tissues surrounding the teeth and dental implants. Gum diseases cause the loss of surrounding structures such as gums and bone. The main cause involves microbial dental plaque. Removing this plaque is essential for both treatment and prevention.</p>
+                </div>
+                
+                <!-- Treatment 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><i class="fa-solid fa-fill-drip"></i></div>
+                    <h3>Dental Fillings</h3>
+                    <p>These treatments aim to restore the function of teeth that have lost substance due to decay. After cleaning the decay, the tooth is filled with various materials. The filling procedure may vary depending on the extent of the decay. Local anesthesia is applied beforehand if deemed necessary.</p>
+                </div>
+
+                <!-- Treatment 4 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Teeth Whitening</h3>
+                    <p>It involves lightening the color of teeth that have yellowed due to tea, coffee, acidic beverages, smoking, or biological factors by several shades using special chemical agents to achieve a whiter appearance.</p>
+                </div>
+
+                <!-- Treatment 5 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="fa-solid fa-syringe"></i></div>
+                    <h3>Root Canal Treatment</h3>
+                    <p>This treatment deals with the tissues in the root portion of the tooth. The inside of the root is cleaned using specialized instruments. Depending on the condition, the treatment might be completed in a single session or span several sessions over a few weeks. Interrupting the treatment can delay recovery and decrease the success rate.</p>
+                </div>
+
+                <!-- Treatment 6 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><i class="fa-solid fa-teeth-open"></i></div>
+                    <h3>Orthodontics</h3>
+                    <p>It encompasses treatments to correct bite disorders, crowded teeth, and widely spaced teeth, aligning them properly within the dental arch using braces (brackets) or advanced clear aligners.</p>
+                </div>
+
+                <!-- Treatment 7 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="fa-solid fa-tooth"></i></div>
+                    <h3>Tooth Extraction</h3>
+                    <p>Extracting untreatable teeth is crucial for protecting the remaining healthy tissues. Surgical extraction might be preferred for impacted teeth. These procedures are usually performed under local anesthesia, though conscious sedation or general anesthesia can be used if needed. Avoid smoking and alcohol, as they delay healing.</p>
+                </div>
+
+                <!-- Treatment 8 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="fa-solid fa-scissors"></i></div>
+                    <h3>Surgical Impacted Tooth Extraction</h3>
+                    <p>For impacted teeth, a surgical extraction approach is preferred. These procedures are generally carried out under local anesthesia. However, when required, they can also be performed under conscious sedation or general anesthesia.</p>
+                </div>
+
+                <!-- Treatment 9 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Dental Implants</h3>
+                    <p>Missing teeth can cause unbalanced forces on the jaw joints, leading to joint issues and the continuous melting of unused jawbone. Implants are a reliable treatment designed to mimic natural tooth roots, placed surgically into the jawbone under sterile conditions and local anesthesia, thereby preventing these problems.</p>
+                </div>
+
+                <!-- Treatment 10 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="fa-solid fa-gem"></i></div>
+                    <h3>Prosthetics</h3>
+                    <p>In cases of advanced tooth wear or missing teeth, fixed prostheses (like metal-supported porcelain or zirconium crowns) are used, which the patient cannot remove. Teeth must be reduced to a certain size for crowns or bridges. Additionally, removable prostheses are offered for completely edentulous patients if implants are not suitable.</p>
+                </div>
+
+                <!-- Treatment 11 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><i class="fa-solid fa-child-reaching"></i></div>
+                    <h3>Pediatric Dentistry</h3>
+                    <p>These practices aim to protect the primary and permanent teeth of children from infancy through adolescence. They include preventive measures such as protective sealants and fluoride applications to stop decay from developing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Info Section -->
+    <section class="banner" data-aos="fade-in">
+        <div class="container">
+            <span class="tagline" data-aos="fade-up">HEALTHY SMILES</span>
+            <h2 data-aos="fade-up" data-aos-delay="100">Contact us for more information and appointments.</h2>
+            <a href="contact.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="300">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logotype" class="inline-style-2">
+                    <h2 class="inline-style-5">G Plus Diş Hekimi</h2>
+                </div>
+                <p>Your Smile Inspires Ours.</p>
+            </div>
+            <div>
+                <h4>Quick Menu</h4>
+                <ul>
+                    <li><a href="index-en.html">Main Page</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="https://app.dentalasistan.com/online-randevu/bukem-gezginer-muayenehanesi" target="_blank" rel="noopener noreferrer">Online Appointment</a></li>
+                    <li><a href="contact.html#contact">Feedback Form</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>CONTACT</h4>
+                <ul>
+                    <li>
+                        <div class="inline-style-6">
+                            <i class="inline-style-7 fa-solid fa-phone"></i>
+                            <div class="inline-style-8">
+                                <a href="tel:+905011749554" class="inline-style-9"><span>+90 501 174 95 54</span></a>
+                                <a href="tel:+902129095495" class="inline-style-9"><span>+90 212 909 54 95</span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="mailto:gplusdishekimi@gmail.com"><i class="fa-solid fa-envelope"></i> <span class="email-text">gplusdishekimi@gmail.com</span></a></li>
+                    <li><a href="https://www.google.com/maps/place/G+Plus+Diş+Hekimi+Bükem+Gezginer+Sevinç+Muayenehanesi/@41.0254589,28.7389576,13z/data=!4m6!3m5!1s0x14caa563bb83cd4f:0x116d659f2eb0c8b8!8m2!3d41.025455!4d28.8151706!16s%2Fg%2F11mm1kc4m0?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i> <span>Bağlar Mah., Mimar Sinan Cd., G-Plus Konutları No:37A, 34212 Bağcılar/İstanbul, Türkiye</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 G Plus Diş Hekimi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://api.whatsapp.com/send?phone=905011749554" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenu.querySelector('i');
+            if(navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        AOS.init({
+            duration: 800, 
+            once: true,
+            offset: 50
+        });
+
+        // Add a slight blur effect to header on scroll
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 50) {
+                header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.05)";
+            } else {
+                header.style.boxShadow = "none";
+            }
+        });
+    </script>
+</body>
+</html>

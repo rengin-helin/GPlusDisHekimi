@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // Language persistence: If preference is EN, redirect to about.html
+        if (localStorage.getItem('preferredLang') === 'en') {
+            window.location.replace('about.html' + window.location.hash);
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="G Plus Diş Hekimi, uzman doktorlarımız ve en iyi diş sağlığı hizmetini sunma misyonumuz hakkında daha fazla bilgi edinin.">
+    <title>Hakkımızda - G Plus Diş Hekimi</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- AOS CSS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <!-- SEO & Localization Tags -->
+    <link rel="canonical" href="https://www.gplusdishekimi.com/hakkımızda.html">
+    <link rel="alternate" hreflang="tr" href="https://www.gplusdishekimi.com/hakkımızda.html">
+    <link rel="alternate" hreflang="en" href="https://www.gplusdishekimi.com/about.html">
+
+    <meta property="og:title" content="Hakkımızda - G Plus Diş Hekimi">
+    <meta property="og:url" content="https://www.gplusdishekimi.com/hakkımızda.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.gplusdishekimi.com/images/sayfa.png">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="inline-style-1">
+                    <img src="images/logo.png" alt="Logotype" class="inline-style-2">
+                    <h1>G Plus Diş Hekimi</h1>
+                </a>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="hakkımızda.html" class="active">Hakkımızda</a>
+                <a href="tedaviler.html">Tedaviler</a>
+                <a href="iletisim.html">İletişim</a>
+                <a href="sss.html">SSS</a>
+                <a href="https://app.dentalasistan.com/online-randevu/bukem-gezginer-muayenehanesi" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Randevu</a>
+                <div class="lang-dropdown">
+                    <button class="lang-btn"><span class="fi fi-tr"></span> Türkçe <i class="inline-style-3 fa-solid fa-chevron-down"></i></button>
+                    <div class="lang-menu">
+                        <a href="javascript:void(0);" onclick="localStorage.setItem('preferredLang', 'tr'); window.location.reload();"><span class="fi fi-tr"></span> Türkçe</a>
+                        <a href="javascript:void(0);" onclick="localStorage.setItem('preferredLang', 'en'); window.location.replace('about.html');"><span class="fi fi-gb"></span> English</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-page">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="tagline">KİMLİĞİMİZ</span>
+                <h2>Hakkımızda</h2>
+            </div>
+            
+            <div class="about-story">
+                <div class="story-left" data-aos="fade-right" data-aos-delay="100">
+                    <h3 class="story-heading">Hekimliğin Özünü Koruyan Bir Anlayış</h3>
+                    <div class="story-highlight">
+                        Amacımız hızlı iş yapmak değil; size gerçek anlamda zaman ayırmak ve sağlığınızı uzun vadeli düşünmektir.
+                    </div>
+                </div>
+                <div class="story-right" data-aos="fade-left" data-aos-delay="200">
+                    <p>Muayenehanemiz; sakin, güvenli ve butik bir ortamda, hekimliğin özünü koruyarak hizmet vermek için kuruldu. Burada amaç kalabalık bir hasta trafiği oluşturmak değil ihtiyaçlarınızı en doğru şekilde anlamaktır.</p>
+                    <p>Dışarıda hekim olmayan pek çok yapının var olduğunu biliyoruz; bu yüzden biz, hekim sorumluluğunu en güçlü şekliyle hissettiğimiz bir yaklaşımı benimsiyoruz. Her tedaviyi kendi ailemize yapıyormuş gibi planlıyor, özenle uyguluyor ve süreci size açık, anlaşılır bir şekilde aktarıyoruz.</p>
+                    
+                    <div class="quote-box" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Muayenehanemizde kendinizi rahat, huzurlu ve güvende hissetmenizi istiyoruz. Bize göre diş tedavisi yalnızca bir işlem değil; bir güven ilişkisidir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <!-- Vision -->
+                <div class="about-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3>Vizyonumuz</h3>
+                    <p>İnsanların kendini güvende hissedeceği, etik hekimliğin merkezde olduğu ve kaliteli hizmetin herkes için ulaşılabilir olduğu bir muayenehane kültürü oluşturmak. Bizim için uzun vadeli sağlık, her zaman hızlı çözümlerden daha değerli.</p>
+                </div>
+
+                <!-- Mission -->
+                <div class="about-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>Misyonumuz</h3>
+                    <p>Muayenehanemize gelen her bireyin ihtiyaçlarını gerçekten anlamak, doğru tedaviyi şeffaf bir şekilde sunmak ve hastalarımızla karşılıklı güvene dayalı sürdürülebilir bir ilişki kurmak. Amacımız; ticari kaygılardan çok, hekimliğin özünü yaşatarak insanların iyiliğine dokunmak.</p>
+                </div>
+
+                <!-- Values -->
+                <div class="about-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Değerlerimiz</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Etik davranış ve güvenilirlik</li>
+                        <li><i class="fa-solid fa-check"></i> İnsan odaklı, samimi yaklaşım</li>
+                        <li><i class="fa-solid fa-check"></i> Açık, net ve şeffaf bilgilendirme</li>
+                        <li><i class="fa-solid fa-check"></i> Kaliteli malzeme ve özenli uygulama</li>
+                        <li><i class="fa-solid fa-check"></i> Sağlığı uzun vadeli koruma hedefi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Info Section -->
+    <section class="banner" data-aos="fade-in">
+        <div class="container">
+            <span class="tagline" data-aos="fade-up">SAĞLIKLI GÜLÜŞLER</span>
+            <h2 data-aos="fade-up" data-aos-delay="100">Daha fazla bilgi ve randevu için bizimle iletişime geçin.</h2>
+            <a href="iletisim.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="300">İletişime Geç</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logotype" class="inline-style-2">
+                    <h2 class="inline-style-5">G Plus Diş Hekimi</h2>
+                </div>
+                <p>Gülüşünüz Gülüşümüzün Sebebi.</p>
+            </div>
+            <div>
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                    <li><a href="tedaviler.html">Tedaviler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Faydalı Linkler</h4>
+                <ul>
+                    <li><a href="https://app.dentalasistan.com/online-randevu/bukem-gezginer-muayenehanesi" target="_blank" rel="noopener noreferrer">Online Randevu</a></li>
+                    <li><a href="iletisim.html#contact">Geri Bildirim Formu</a></li>
+                    <li><a href="sss.html">SSS</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>İLETİŞİM</h4>
+                <ul>
+                    <li>
+                        <div class="inline-style-6">
+                            <i class="inline-style-7 fa-solid fa-phone"></i>
+                            <div class="inline-style-8">
+                                <a href="tel:+905011749554" class="inline-style-9"><span>+90 501 174 95 54</span></a>
+                                <a href="tel:+902129095495" class="inline-style-9"><span>+90 212 909 54 95</span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="mailto:gplusdishekimi@gmail.com"><i class="fa-solid fa-envelope"></i> <span class="email-text">gplusdishekimi@gmail.com</span></a></li>
+                    <li><a href="https://www.google.com/maps/place/G+Plus+Diş+Hekimi+Bükem+Gezginer+Sevinç+Muayenehanesi/@41.0254589,28.7389576,13z/data=!4m6!3m5!1s0x14caa563bb83cd4f:0x116d659f2eb0c8b8!8m2!3d41.025455!4d28.8151706!16s%2Fg%2F11mm1kc4m0?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i> <span>Bağlar Mah., Mimar Sinan Cd., G-Plus Konutları No:37A, 34212 Bağcılar/İstanbul, Türkiye</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 G Plus Diş Hekimi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://api.whatsapp.com/send?phone=905011749554" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenu.querySelector('i');
+            if(navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        AOS.init({
+            duration: 800, 
+            once: true,
+            offset: 50
+        });
+
+        // Add a slight blur effect to header on scroll
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 50) {
+                header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.05)";
+            } else {
+                header.style.boxShadow = "none";
+            }
+        });
+    </script>
+</body>
+</html>

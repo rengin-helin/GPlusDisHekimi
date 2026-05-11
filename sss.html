@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // Language persistence: If preference is EN, redirect to faq.html
+        if (localStorage.getItem('preferredLang') === 'en') {
+            window.location.replace('faq.html' + window.location.hash);
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="G Plus Diş Hekimi'nde diş tedavileri, ağız sağlığı ve politikalarımız hakkında sıkça sorulan soruların cevaplarını bulun.">
+    <title>Sıkça Sorulan Sorular - G Plus Diş Hekimi</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- AOS CSS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <!-- SEO & Localization Tags -->
+    <link rel="canonical" href="https://www.gplusdishekimi.com/sss.html">
+    <link rel="alternate" hreflang="tr" href="https://www.gplusdishekimi.com/sss.html">
+    <link rel="alternate" hreflang="en" href="https://www.gplusdishekimi.com/faq.html">
+
+    <meta property="og:title" content="Sıkça Sorulan Sorular - G Plus Diş Hekimi">
+    <meta property="og:url" content="https://www.gplusdishekimi.com/sss.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.gplusdishekimi.com/images/sayfa.png">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="inline-style-1">
+                    <img src="images/logo.png" alt="Logotype" class="inline-style-2">
+                    <h1>G Plus Diş Hekimi</h1>
+                </a>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="hakkımızda.html">Hakkımızda</a>
+                <a href="tedaviler.html">Tedaviler</a>
+                <a href="iletisim.html">İletişim</a>
+                <a href="sss.html" class="active">SSS</a>
+                <a href="https://app.dentalasistan.com/online-randevu/bukem-gezginer-muayenehanesi" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Randevu</a>
+                <div class="lang-dropdown">
+                    <button class="lang-btn"><span class="fi fi-tr"></span> Türkçe <i class="inline-style-3 fa-solid fa-chevron-down"></i></button>
+                    <div class="lang-menu">
+                        <a href="javascript:void(0);" onclick="localStorage.setItem('preferredLang', 'tr'); window.location.reload();"><span class="fi fi-tr"></span> Türkçe</a>
+                        <a href="javascript:void(0);" onclick="localStorage.setItem('preferredLang', 'en'); window.location.replace('faq.html');"><span class="fi fi-gb"></span> English</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="faq-page">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="tagline">BİLGİ MERKEZİ</span>
+                <h2>Sıkça Sorulan Sorular</h2>
+                <p>Ağız ve diş sağlığınızla ilgili merak ettiğiniz tüm soruların cevaplarını burada bulabilirsiniz.</p>
+            </div>
+            
+            <div class="faq-container">
+                
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">1. Ne kadar sıklıkla diş kontrolüne gelmeliyim? <i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Genellikle 6 ayda bir kontrol idealdir. Ağız yapınız veya risk durumunuz farklıysa hekiminiz bu aralığı sizin için kişiselleştirir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">2. Diş taşları temizliği dişime zarar verir mi? <i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Hayır, zarar vermez. Aksine, temizlenmezse diş eti hastalığı, kemik kaybı ve kötü koku gibi daha büyük sorunlar çıkarır.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">3. Doğru diş fırçalama tekniği nasıl olmalı? <i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Yumuşak bir fırçayla, diş eti hizasına 45° açı verip diş etinden ağız içine süpürme hareketleriyle fırçalamalısınız. Bastırmak değil, doğru teknik önemlidir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">4. Günde kaç kez diş fırçalamak ideal? <i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Günde en az 2 kez, özellikle gece yatmadan önce fırçalamak şart. Tek sefer bile atlanırsa bakteri birikimi ciddi şekilde artar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">5. Diş eti kanaması normal mi, yoksa hastalık belirtisi mi? <i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Normal değildir. Genellikle diş eti iltihabının ilk belirtisidir. Erken tedaviyle hızla düzelir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">6. Kanal tedavisi acıtır mı? <i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Hayır. Modern tekniklerle işlem sırasında ağrı hissetmezsiniz. Genelde ağrıyı kanal tedavisi değil, kanallardaki enfeksiyon yaratır.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">7. Diş çekiminden sonra nelere dikkat etmeliyim? <i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>İlk 48 saatte sıcak yiyecek/içecek tüketmeyin, tükürmeyin ve pipet kullanmayın. Pıhtıyı bozmak iyileşmeyi geciktirir. Doktorun önerdiği ilaç düzenine ve size verdiğimiz kağıtlara uymanız yeterli.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">8. İmplant mı yoksa köprü mü daha mantıklı? <i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Çevre dişlere dokunulmayan, uzun ömürlü ve doğal hissiyat verdiği için implant çoğu hastada daha avantajlıdır. Ama karar her zaman çene kemiği durumuna göre hasta bazlı karar verilir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">9. Diş eti çekilmesi neden olur? <i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Genelde yanlış fırçalama, diş eti hastalığı, kötü alışkanlıklar, diş sıkma-gıcırdatma, kronik rahatsızlıklar veya genetik yatkınlık nedeniyle oluşur. Erken fark edilirse ilerlemesi durdurulabilir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">10. Diş kırıldığında ilk yapılması gereken nedir? <i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Hemen hekime başvurunuz. İlk saatler önemlidir. Kırığın boyutuna göre dolgu, kaplama veya kanal tedavisiyle çözülebilir.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Info Section -->
+    <section class="banner" data-aos="fade-in">
+        <div class="container">
+            <span class="tagline" data-aos="fade-up">SAĞLIKLI GÜLÜŞLER</span>
+            <h2 data-aos="fade-up" data-aos-delay="100">Daha fazla bilgi ve randevu için bizimle iletişime geçin.</h2>
+            <a href="iletisim.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="300">İletişime Geç</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logotype" class="inline-style-2">
+                    <h2 class="inline-style-5">G Plus Diş Hekimi</h2>
+                </div>
+                <p>Gülüşünüz Gülüşümüzün Sebebi.</p>
+            </div>
+            <div>
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                    <li><a href="tedaviler.html">Tedaviler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Faydalı Linkler</h4>
+                <ul>
+                    <li><a href="https://app.dentalasistan.com/online-randevu/bukem-gezginer-muayenehanesi" target="_blank" rel="noopener noreferrer">Online Randevu</a></li>
+                    <li><a href="iletisim.html#contact">Geri Bildirim Formu</a></li>
+                    <li><a href="sss.html">SSS</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>İLETİŞİM</h4>
+                <ul>
+                    <li>
+                        <div class="inline-style-6">
+                            <i class="inline-style-7 fa-solid fa-phone"></i>
+                            <div class="inline-style-8">
+                                <a href="tel:+905011749554" class="inline-style-9"><span>+90 501 174 95 54</span></a>
+                                <a href="tel:+902129095495" class="inline-style-9"><span>+90 212 909 54 95</span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="mailto:gplusdishekimi@gmail.com"><i class="fa-solid fa-envelope"></i> <span class="email-text">gplusdishekimi@gmail.com</span></a></li>
+                    <li><a href="https://www.google.com/maps/place/G+Plus+Diş+Hekimi+Bükem+Gezginer+Sevinç+Muayenehanesi/@41.0254589,28.7389576,13z/data=!4m6!3m5!1s0x14caa563bb83cd4f:0x116d659f2eb0c8b8!8m2!3d41.025455!4d28.8151706!16s%2Fg%2F11mm1kc4m0?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i> <span>Bağlar Mah., Mimar Sinan Cd., G-Plus Konutları No:37A, 34212 Bağcılar/İstanbul, Türkiye</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 G Plus Diş Hekimi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://api.whatsapp.com/send?phone=905011749554" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenu.querySelector('i');
+            if(navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        AOS.init({
+            duration: 800, 
+            once: true,
+            offset: 50
+        });
+
+        // Add a slight blur effect to header on scroll
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 50) {
+                header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.05)";
+            } else {
+                header.style.boxShadow = "none";
+            }
+        });
+
+        // FAQ Accordion Logic
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                faqItems.forEach(otherItem => {
+                    if(otherItem !== item) otherItem.classList.remove('active');
+                }); 
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
